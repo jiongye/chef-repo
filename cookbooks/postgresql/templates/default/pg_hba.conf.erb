@@ -16,7 +16,7 @@
 <% if node['postgresql']['version'].to_f < 9.1 -%>
 local   all             all                                     ident
 <% elsif node['postgresql']['version'].to_f >= 9.1 -%>
-local   all             all                                     peer
+local   all             all                                     trust
 <% end -%>
 
 ###########
