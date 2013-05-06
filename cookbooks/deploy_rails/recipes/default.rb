@@ -13,5 +13,9 @@ application "library" do
   group "vagrant"
   repository "https://github.com/jiongye/library.git"
 
+  rails do
+    bundler true
+  end
+
   passenger_apache2
 end
